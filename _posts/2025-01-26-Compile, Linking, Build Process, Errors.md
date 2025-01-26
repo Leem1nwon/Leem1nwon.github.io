@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Compile and Linking, Build Process, Errors"
+title: "Compile, Linking, Build Process, Errors"
 ---
 
 # C++ 프로그램의 구조
