@@ -52,16 +52,19 @@ a + b;
 int distanceDriven;
 std::cout << distanceDriven;
 ```
-## Linker Errors / Runtime Errors
+### Linker Errors / Runtime Errors
+
 #### 링크 에러
-- obj 파일의 링크 과정에서 오류가 있을 경우
-- 주로 라이브러리 또는 obj 파일을(어떤 이유에서) 찾을 수 없는 경우
+- `obj` 파일의 링크 과정에서 오류가 있을 경우
+- 주로 라이브러리 또는 `obj` 파일을 찾을 수 없는 경우
+
 #### 런타임 에러
 - 프로그램이 실행 도중 발생하는 오류
-- 프로그램이 뻗어버린다(?)라고 표현하기도 함
-- Diveded by zero, file not found, out of memory, etc...
-- 프로그램의 crash
-- 예외 처리를 통해 문제 발생에 따르는 처리를 할 수 있음!
+- 프로그램이 "뻗어버린다(?)"라고 표현하기도 함
+  - Divided by zero, file not found, out of memory, etc...
+  - 프로그램의 crash
+- 예외 처리를 통해 문제 발생에 따른 처리를 할 수 있음!
+
 ## Logical Errors
 - 프로그램의 동작에 관한 논리적 오류
 - 프로그램 작성자의 실수가 원인 
