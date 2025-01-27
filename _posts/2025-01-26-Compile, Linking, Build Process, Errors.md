@@ -26,7 +26,7 @@ title: "Compile, Linking, Build Process, Errors"
 #### 6. IDE (Integrated Development Environment)
 - 텍스트 에디터 + 컴파일러 + 링커 + (디버거)
 
-![C++ Build Process](../images/2025-01-26-Introduction%20and%20Variable/cpp_build_process.png)
+![C++ Build Process](../images/2025-01-26-Introduction%20and%20Variable/cpp_build_process.png){width=500px}
 
 ---
 
