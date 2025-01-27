@@ -103,6 +103,7 @@ std::cout << "My age is" << age;
 ```
 
 - 줄바꿈이 필요한 경우 명시해 주어야 함.
+
 ```
 std::cout << "My age is" << age << endl;
 std::cout << "My age is" << age << "\n";
@@ -111,6 +112,7 @@ std::cout << "My age is" << age << "\n";
 #### cin과 >>
 - C++ 의 표준 입력 스트림, 추출 연산자
 - 순차적인 입력이 가능
+
 ```  
 cin >> myAge >> myHeight;
 ```
@@ -154,6 +156,7 @@ cin >> myAge >> myHeight;
 
 변수라는 개념이 없다면
 - 다음과 같이 불편하게 코드를 작성해야 했을 것이다.
+
 ``` 
 int 0xFA84 = 10;
 0xFA84 = 0xFA90 +6;
@@ -183,6 +186,7 @@ std::string name = "Hyungki Kim";
 변수의 사용
 - 변수 이름은 변수가 확보한 그 메모리에 접근하기 위해 사용됨
 - 메모리에 값을 **읽고 쓰는 것**이 변수의 사용임
+
 ```
 a = 20;          // 메모리 내 a 변수 위치에 20을 쓰기
 printf("%d", a); // 메모리 내 a 변수 위치의 값을 읽어서 출력
