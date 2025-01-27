@@ -23,13 +23,12 @@ title: "Basic Structure, Terminology, Memory and Variable"
 전처리기
 - 컴파일 이전에 처리됨
 - "#" 으로 시작
+
 ```
-//include
-#include <iostream>
+#include <iostream> //include
 #include "myFile.h"
 
-// define
-#ifdef
+#ifdef // define
 #ifndef
 #define
 #undef
