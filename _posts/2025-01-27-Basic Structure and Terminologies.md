@@ -17,6 +17,7 @@ title: "Basic Structure, Terminology, Memory and Variable"
 
 #### 연산자
 - +, -, *, /, >>, <<, ::, ...
+
 ---
 ## C++ preprocessor
 전처리기
@@ -35,23 +36,29 @@ title: "Basic Structure, Terminology, Memory and Variable"
 
 #pragma
 ```
+
 #include ?
 - 단순한 복사 붙여넣기와 같다.
 - #include <iostream>의 경우, iostream의 코드 내용을 복사 붙여넣기 한 것과 동일
 
 #define ?
 - Platform independecy 구현, 코드 단축, debug 목적 등으로 다양하게 활용
+
 ---
+
 ## main() function
 모든 C++ 프로그램은 하나의 main()함수를 가져야 함
 - main() 함수는 프로그램의 진입점(=프로그램이 실행되면 가장 먼저 실행되는 함수)
 - 리턴값이 0이 올바른 프로그램 실행을 의미함
+
 ```
 int main() {
     //code
 }
 ```
+
 ---
+
 ## C++ namespace
 **std**::cout
 
@@ -83,16 +90,19 @@ int main() {
     std::cout << "Amazing!! ..." << std::endl;
 }
 ```
+
 ---
 ## Basic I/O, Input
 ![stream](../images/2025-01-27-Basic%20Structure%20and%20Terminologies/stream.png){width=500px}
 #### cout과 <<
 - C++의 표준 출력 스트림, 삽입 연산자
 - 순차적인 출력이 가능
+
 ```
 int age = 20;
 std::cout << "My age is" << age;
 ```
+
 - 줄바꿈이 필요한 경우 명시해 주어야 함.
 ```
 std::cout << "My age is" << age << endl;
