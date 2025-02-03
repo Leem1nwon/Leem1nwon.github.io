@@ -39,7 +39,7 @@ std:cout << "Errors << std::endl;
 return 0;
 ```
 ##### 의미 오류
-```
+```cpp
 int a = 5;
 string b = "Hello World";
 
@@ -48,7 +48,7 @@ a + b;
 ## Compiler Warnings
 코드에 잠재적인 문제가 있을 것으로 예상될 때
 빌드는 가능하지만, 무시하면 안됨!
-```
+```cpp
 int distanceDriven;
 std::cout << distanceDriven;
 ```
@@ -69,7 +69,7 @@ std::cout << distanceDriven;
 - 프로그램의 동작에 관한 논리적 오류
 - 프로그램 작성자의 실수가 원인 
 - 테스트 과정을 통해 찾아내고, 수정해야 함!
-```
+```cpp
 if (age >= 19) {                    //19세가 아닌, 다른 나이가 기준일 수도 있다.
     std::cout << "You can drink!"; 
 }
