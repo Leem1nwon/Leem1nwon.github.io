@@ -24,7 +24,7 @@ title: "Basic Structure, Terminology, Memory and Variable"
 - 컴파일 이전에 처리됨
 - "#" 으로 시작
 
-```
+```cpp
 #include <iostream> //include
 #include "myFile.h"
 
@@ -50,7 +50,7 @@ title: "Basic Structure, Terminology, Memory and Variable"
 - main() 함수는 프로그램의 진입점(=프로그램이 실행되면 가장 먼저 실행되는 함수)
 - 리턴값이 0이 올바른 프로그램 실행을 의미함
 
-```
+```cpp
 int main() {
     //code
 }
@@ -78,7 +78,7 @@ int main() {
   - Using namespace를 모든 코드에 넣는다면, namespace의 기능을 상실한다.
   - 어느 namespace에 속하는 어떤 함수를 사용하겠다는 걸 명시하는 의미가 있기 때문
   
-```
+```cpp
 #include <iostream>
 
 int main() {
@@ -97,14 +97,14 @@ int main() {
 - C++의 표준 출력 스트림, 삽입 연산자
 - 순차적인 출력이 가능
 
-```
+```cpp
 int age = 20;
 std::cout << "My age is" << age;
 ```
 
 - 줄바꿈이 필요한 경우 명시해 주어야 함.
 
-```
+```cpp
 std::cout << "My age is" << age << endl;
 std::cout << "My age is" << age << "\n";
 ```
@@ -113,8 +113,8 @@ std::cout << "My age is" << age << "\n";
 - C++ 의 표준 입력 스트림, 추출 연산자
 - 순차적인 입력이 가능
 
-```  
-cin >> myAge >> myHeight;
+```cpp
+std::cin >> myAge >> myHeight;
 ```
 ---
 ## 변수와 메모리
@@ -157,7 +157,7 @@ cin >> myAge >> myHeight;
 변수라는 개념이 없다면
 - 다음과 같이 불편하게 코드를 작성해야 했을 것이다.
 
-``` 
+``` cpp
 int 0xFA84 = 10;
 0xFA84 = 0xFA90 +6;
 ```
@@ -166,7 +166,7 @@ int 0xFA84 = 10;
 ##### 변수의 정의
 (C++에서) 변수를 정의할 때는 반드시 타입을 명시해야 함
 &rarr; 바이트를 몇 칸이나 확보해야 하는지 미리 알아야 하기 때문
-```
+```cpp
 char a;
 int age;
 double rate;
@@ -175,7 +175,7 @@ std::string name;
 ##### 변수의 초기화
 변수를 정의하면서 초기값을 설정하는 것을 초기화라고 함
 &rarr; 변수를 생성하는 시점부터, 메모리에 값이 저장되어 있음
-```
+```cpp
 char a = 10;
 int age = 21;
 double rate = 0.85;
@@ -187,7 +187,7 @@ std::string name = "Hyungki Kim";
 - 변수 이름은 변수가 확보한 그 메모리에 접근하기 위해 사용됨
 - 메모리에 값을 **읽고 쓰는 것**이 변수의 사용임
 
-```
+```cpp
 a = 20;          // 메모리 내 a 변수 위치에 20을 쓰기
 printf("%d", a); // 메모리 내 a 변수 위치의 값을 읽어서 출력
 ```
@@ -214,7 +214,7 @@ true / false
 
 #### sizeof 연산자
 타입 도는 변수의 바이트 단위 크기를 리턴
-```
+```cpp
 sizeof(int) // 타입의 크기
 sizeof(double) // 타입의 크기
 sizeof(favoriteNumber) // 변수의 크기
