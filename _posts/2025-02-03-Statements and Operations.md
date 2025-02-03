@@ -12,7 +12,7 @@ title: "Statements and Operations"
 13                  // literal
 favorite_number     // variable
 3 + 5               // addition
-a < b               // ralational
+a < b               // relational
 a = 20              // assignment
 ```
 
@@ -68,7 +68,7 @@ num1 = "Minwon" // Compiler Error!
 
 ```cpp
 if(expr1 && expr2 && expr3)   // if expr1 is false? -> 뒤에는 안봄
-if(expr1 || expr2 || expr3)   // if expr1 is true? -> 뒤에는 안봄봄
+if(expr1 || expr2 || expr3)   // if expr1 is true? -> 뒤에는 안봄
 ```
 
 #### 복합 연산자
