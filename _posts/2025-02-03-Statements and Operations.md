@@ -75,4 +75,8 @@ if(expr1 || expr2 || expr3)   // if expr1 is true? -> 뒤에는 안봄
 
 ![복합연산자](../images/2025-02-03-Statements%20and%20Operations/복합연산자.png){width=700px}
 
+---
+### 참고 자료
+이 문서 작성에는 [YouTube Playlist: C++ Programming][playlist]를 참고했습니다.
 
+[playlist]: https://www.youtube.com/playlist?list=PLMcUoebWMS1nzhlx-NbD4KBGEP1UCUDF_

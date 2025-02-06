@@ -208,3 +208,9 @@ do {
 - **루프 밖으로** 빠져나가기 위해 사용
 
 ![cont_break](../images/2025-02-05-Controlling%20Flow/continue_break.png)
+
+---
+### 참고 자료
+이 문서 작성에는 [YouTube Playlist: C++ Programming][playlist]를 참고했습니다.
+
+[playlist]: https://www.youtube.com/playlist?list=PLMcUoebWMS1nzhlx-NbD4KBGEP1UCUDF_

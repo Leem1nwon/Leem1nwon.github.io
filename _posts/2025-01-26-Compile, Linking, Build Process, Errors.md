@@ -74,3 +74,9 @@ if (age >= 19) {                    //19세가 아닌, 다른 나이가 기준�
     std::cout << "You can drink!"; 
 }
 ```
+
+---
+### 참고 자료
+이 문서 작성에는 [YouTube Playlist: C++ Programming][playlist]를 참고했습니다.
+
+[playlist]: https://www.youtube.com/playlist?list=PLMcUoebWMS1nzhlx-NbD4KBGEP1UCUDF_
