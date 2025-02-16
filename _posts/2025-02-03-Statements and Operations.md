@@ -1,82 +1,87 @@
 ---
 layout: single
 title: "Statements and Operations"
+categories: Basic_C++
 ---
 
-## Expressions & Statements
+# C++ 프로그램의 구조
 
-#### 표현식
-코드의 가장 작은 구성요소
+## 1. Expressions & Statements
 
-```cpp
-13                  // literal
-favorite_number     // variable
-3 + 5               // addition
-a < b               // relational
-a = 20              // assignment
-```
+### 1.1 표현식 (Expressions)
+- **정의:**  
+  코드의 가장 작은 구성요소.
+- **예제:**
+  ```cpp
+  13                  // literal
+  favorite_number     // variable
+  3 + 5               // addition
+  a < b               // relational
+  a = 20              // assignment
+  ```
 
-#### 명령문
-- 명령을 수행하는 코드 단위
-- 세미콜론 (;) 으로 끝나는 문장
-- 표현식의 집합
+### 1.2 명령문 (Statements)
+- **정의:**  
+  명령을 수행하는 코드 단위로, 세미콜론(;)으로 끝나는 문장이다.
+- **특징:**  
+  표현식의 집합으로 구성된다.
+- **예제:**
+  ```cpp
+  int favorite_number;                            // declaration
+  favorite_number = 20;                           // assignment
+  3 + 5;                                          // expression
+  favorite_number = 3 * 5;                        // assignment
+  if (a > b) std::cout << "a is greater than b";  // if 문
+  ```
 
-```cpp
-int favorite_number;                            // declaration
-favorie_number = 20;                            // assignment
-3 + 5;                                          // expression
-favorite_number = 3 * 5;                        // assignment
-if (a>b) std::cout << "a is greater than b";    // if
-```
+--------------------------------------------------
 
----
+## 2. Operations
 
-## Operations
+### 2.1 연산자 분류
+- **단항 (Unary)**
+- **이항 (Binary)**
+- **삼항 (Ternary)**
 
-#### 연산자 개수에 따른 분류류
-단항(unary), 이항(binary), 삼항(ternary) 연산자
+### 2.2 대입 연산자
+- **형식:** `lhs = rhs`
+- **동작:** 오른쪽의 값을 계산하여 왼쪽에 대입한다.
+- **주의:** 왼쪽은 l-value여야 한다.
+- **예제:**
+  ```cpp
+  int num1 = 0;
+  num1 = "Minwon"; // Compiler Error! (문자열은 대입 불가)
+  ```
 
-#### 대입 연산자
-- lhs = rhs
-- l-value & r-value
-- 오른쪽의 값을 계산하여 왼쪽에 대입
-- 컴파일러가 대입이 가능한지 체크함
-  
-```cpp
-int num1 = 0;
-num1 = "Minwon" // Compiler Error!
-```
-- 왼쪽은 대입이 가능해야 함 (리터럴, 상수는 될 수 없음)
+### 2.3 산술 연산자
+- **예:** `+`, `-`, `*`, `/`, `%`
 
-#### 산술 연산자
-- +, -, *, /, %
+### 2.4 증감 연산자
+- **Prefix:** `++num`, `--num` (대입 전에 증감)
+- **Postfix:** `num++`, `num--` (대입 후 증감)
 
-#### 증감 연산자
-- Prefix (++num, --num) : 대입 전 증감
-- Postfix (num++, num--) : 대입 후 증감
+### 2.5 비교 연산자
+- **예:** `==`, `!=`
+- **결과:** Boolean 값 (true 또는 false)
 
-#### 비교 연산자
-- ==, !=
-- 결과는 Boolean 타입의 true or false
+### 2.6 관계 연산자
+- **예:** `<`, `>`, `<=`, `>=`
 
-#### 관계 연산자
-- <, >, <=, >=
+### 2.7 논리 연산자
+- **예:** `!`, `&&`, `||`
+- **특징:**  
+  - Short-circuit evaluation:  
+    예를 들어, `if(expr1 && expr2 && expr3)`에서 `expr1`이 false이면 나머지 평가하지 않음.
+    `if(expr1 || expr2 || expr3)`에서 `expr1`이 true이면 나머지 평가하지 않음.
 
-#### 논리 연산자
-- !, &&, || (not, and, or)
-- short-circuit evaluation : 결과 파악이 가능한 경우, 나머지 연산을 하지 않음 (최적화)
+### 2.8 복합 연산자
+- 복합 연산자는 여러 연산자를 결합한 형태를 의미한다.
+- **예제 이미지:**  
+  ![복합연산자](../images/2025-02-03-Statements%20and%20Operations/복합연산자.png){width=700px}
 
-```cpp
-if(expr1 && expr2 && expr3)   // if expr1 is false? -> 뒤에는 안봄
-if(expr1 || expr2 || expr3)   // if expr1 is true? -> 뒤에는 안봄
-```
+--------------------------------------------------
 
-#### 복합 연산자
-
-![복합연산자](../images/2025-02-03-Statements%20and%20Operations/복합연산자.png){width=700px}
-
----
-### 참고 자료
+## 참고 자료
 이 문서 작성에는 [YouTube Playlist: C++ Programming][playlist]를 참고했습니다.
 
 [playlist]: https://www.youtube.com/playlist?list=PLMcUoebWMS1nzhlx-NbD4KBGEP1UCUDF_

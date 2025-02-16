@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Operator Overloading"
-categories: C++ Basic
+categories: Basic_C++
 ---
 
 # 연산자 오버로딩
