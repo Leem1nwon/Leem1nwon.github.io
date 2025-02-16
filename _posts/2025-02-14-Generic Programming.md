@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Generic Programming and Template"
+categories: C++ Basic
 ---
 
 # 제네릭 프로그래밍과 템플릿

@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Inheritance"
+categories: C++ Basic
 ---
 
 # 상속

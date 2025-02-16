@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Polymorphism"
+categories: C++ Basic
 ---
 
 # 다형성
