@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[Embedded System] Introduction & Linux Basics"
-categories: Embedded System
+categories: Embedded_System
 ---
 
 # Embedded System
