@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Embedded System] Introduction & Linux Basics"
+title: "MATLAB Onramp"
 categories: MATLAB
 ---
 # MATLAB 기본 구문 가이드
