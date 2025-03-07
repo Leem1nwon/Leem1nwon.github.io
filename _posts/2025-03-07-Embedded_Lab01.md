@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Embedded System] Lab01 : AWS EC2 인스턴스, 리눅스 기초
+title: "[Embedded System] Lab01 : AWS EC2 인스턴스, 리눅스 기초"
 categories: Embedded_System
 ---
 
