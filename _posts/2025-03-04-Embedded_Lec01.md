@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Embedded System] Introduction & Linux Basics"
+title: "[Embedded System] Lec01 : Introduction"
 categories: Embedded_System
 ---
 
