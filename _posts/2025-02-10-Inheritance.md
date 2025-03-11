@@ -385,7 +385,9 @@ int main() {
 ### 7.3. 정적 바인딩
 - 만약 유도 클래스와 기본 클래스에 같은 이름과 인자를 가진 함수가 있을 경우, 호출되는 함수는 포인터나 참조의 타입에 따라 정적으로 결정된다.
 - C++의 기본 바인딩 방식은 정적 바인딩이다.
-  - 예를 들어, 아래 코드에서 `Entity *ePtr = new Player{...};`일 경우, `ePtr->Talk()`는 Entity::Talk()를 호출한다.
+  - 예를 들어, 아래 코드에서 `Entity *ePtr = new Player{...};`일 경우, `ePtr->Talk()`는 `Entity::Talk()`를 호출한다.
+
+
 ```cpp
 Entity e{1,1};
 e.Talk();   // Entity::Talk() 호출
