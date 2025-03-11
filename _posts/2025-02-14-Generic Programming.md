@@ -20,7 +20,8 @@ categories: Basic_C++
 
 ### 1.3 매크로를 사용한 제네릭 프로그래밍
 **매크로 (#define)**  
-- 코드를 단순 대체(복붙)하는 방식  
+- 코드를 단순 대체(복붙)하는 방식 
+ 
 ```cpp
 #define MAX_SIZE 100
 #define PI 3.14159
@@ -33,6 +34,7 @@ double area = PI * r * r;
 
 ### 1.4 Generic 하지 않은 프로그래밍
 - 예를 들어, int 타입에 대한 Max 함수를 구현하면:
+
 ```cpp
 int Max(int a, int b)
 {
@@ -43,7 +45,9 @@ int x = 100;
 int y = 200;
 cout << Max(x, y);   // 200
 ```
+
 - double, char 등 다른 타입으로 확장하려면 추가 구현이 필요하다.
+
 ```cpp
 double Max(double a, double b)
 {
@@ -58,6 +62,7 @@ char Max(char a, char b)
 
 ### 1.5 매크로를 사용한 max 함수의 일반적인 구현
 - 매크로는 인수(a, b)를 받아 타입에 구애받지 않고 generic하게 코드를 작성할 수 있다.
+
 ```cpp
 #define Max(a, b) ((a > b) ? a : b)
 
@@ -70,6 +75,7 @@ cout << Max('A', 'C') << endl;   // 'C'
 - 코드는 단순 치환되므로, 괄호로 감싸는 것이 안전하다.
   - 세미콜론(;)은 포함하지 않는 것이 기본 약속.
 - 매크로는 디버깅이 어렵고, 예상치 못한 에러가 발생할 수 있음.
+
 ```cpp
 #define SQUARE(a) a * a   // 위험: SQUARE(5 + 1) → 5 + 1 * 5 + 1 = 5 + 5 + 1
 // 안전하게 구현하려면:
@@ -88,6 +94,7 @@ result = 100 / SQUARE(5);  // 올바른 결과: 100 / ((5) * (5)) = 4
 
 ### 2.2 템플릿을 사용한 max 함수의 구현
 - 템플릿을 이용하면 타입 이름을 T로 대체하여 하나의 함수로 여러 타입을 지원할 수 있다.
+
 ```cpp
 template <typename T>
 T Max(T a, T b)
@@ -95,7 +102,9 @@ T Max(T a, T b)
     return (a > b) ? a : b;
 }
 ```
+
 - 템플릿 함수는 자료형을 명시할 수 있으며, 컴파일러가 타입을 추론할 수 있으면 생략 가능하다.
+
 ```cpp
 double c = 1.23, d = 4.56;
 cout << Max<double>(c, d);
@@ -105,6 +114,7 @@ cout << Max(c, d);  // 타입 추론 가능
 ### 2.3 템플릿 사용 조건
 - 템플릿 함수(예: max)는 내부에서 사용하는 연산자(예: >)가 해당 타입에 대해 정의되어 있어야 한다.
 - 예를 들어, `Point` 클래스에서 Max 함수를 사용하려면, Point 클래스에 > 연산자가 오버로딩되어 있어야 한다.
+  
 ```cpp
 Point p1{10, 20};
 Point p2{20, 30};
@@ -114,6 +124,7 @@ cout << Max<Point>(p1, p2);
 
 ### 2.4 템플릿의 다중 매개변수
 - 템플릿은 여러 매개변수를 사용할 수 있으며, 서로 다른 이름을 부여해 각기 다른 타입을 받을 수 있다.
+
 ```cpp
 template <typename T1, typename T2>
 void func(T1 a, T2 b)
@@ -127,6 +138,7 @@ func('A', 12.5);  // 타입 추론 가능
 
 ### 2.5 템플릿의 특수화
 - 특정 자료형에 대해 별도의 구현을 제공할 수 있다.
+
 ```cpp
 template <typename T>
 T Min(T a, T b) {
@@ -149,6 +161,7 @@ std::string Min(std::string a, std::string b)
 
 ### 3.2 Item 클래스 예제
 일반 클래스:
+
 ```cpp
 class Item
 {
@@ -162,7 +175,9 @@ public:
     int getValue() const { return value; }
 };
 ```
+
 템플릿 클래스:
+
 ```cpp
 template <typename T>
 class Item
@@ -186,6 +201,7 @@ int main()
 ```
 
 ### 3.3 클래스 템플릿의 다중 매개변수
+
 ```cpp
 template <typename T1, typename T2>
 class MyPair {
@@ -206,6 +222,7 @@ int main()
 
 ### 3.4 클래스 템플릿의 (부분)특수화
 - 클래스 템플릿의 일부 인자에 대해 별도의 구현을 제공할 수 있다.
+
 ```cpp
 template <typename T1, typename T2>
 class Item {
@@ -228,6 +245,7 @@ public:
 
 ### 3.5 클래스 템플릿의 매개변수 (non-type)
 - 템플릿은 타입이 아닌 다른 값도 인자로 사용할 수 있다.
+
 ```cpp
 template <typename T, int N>
 class Array 
